@@ -69,3 +69,33 @@ For Developers
 ============
 You can also see either [Python](https://github.com/starlangsoftware/SemanticRoleLabeling-Py), [Java](https://github.com/starlangsoftware/SemanticRoleLabeling),
 [C++](https://github.com/starlangsoftware/SemanticRoleLabeling-CPP), [Cython](https://github.com/starlangsoftware/SemanticRoleLabeling-Cy), or [C#](https://github.com/starlangsoftware/SemanticRoleLabeling-CS) repository.
+
+Detailed Description
+============
+
+The first task in Semantic Role Labeling is detecting predicates. In order to detect the predicates of the sentence, we use autoPredicate method of the TurkishSentenceAutoPredicate class.
+
+	sentence = ...
+	turkishAutoPredicate = TurkishSentenceAutoPredicate(new FramesetList())
+	turkishAutoPredicate.autoPredicate(sentence)
+	
+Afterwards, one has to annotate the arguments for each predicate. We use autoArgument method of the TurkishSentenceAutoArgument class for that purpose.
+
+	turkishAutoArgument.autoArgument(sentence)
+
+# Cite
+
+	@article{tbtkelektrik400987,
+	journal = {Turkish Journal of Electrical Engineering and Computer Science},
+	issn = {1300-0632},
+	eissn = {1303-6203},
+	address = {},
+	publisher = {TÜBİTAK},
+	year = {2018},
+	volume = {26},
+	pages = {570 - 581},
+	doi = {},
+	title = {Construction of a Turkish proposition bank},
+	key = {cite},
+	author = {Ak,  Koray and Toprak,  Cansu and Esgel,  Volkan and Yıldız,  Olcay Taner}
+	}
