@@ -68,7 +68,7 @@ After generating the classification dataset as above, one can use the [Classific
 For Developers
 ============
 You can also see either [Python](https://github.com/starlangsoftware/SemanticRoleLabeling-Py), [Java](https://github.com/starlangsoftware/SemanticRoleLabeling),
-[C++](https://github.com/starlangsoftware/SemanticRoleLabeling-CPP), [Cython](https://github.com/starlangsoftware/SemanticRoleLabeling-Cy), or [C#](https://github.com/starlangsoftware/SemanticRoleLabeling-CS) repository.
+[C++](https://github.com/starlangsoftware/SemanticRoleLabeling-CPP), [Cython](https://github.com/starlangsoftware/SemanticRoleLabeling-Cy), [Swift](https://github.com/starlangsoftware/SemanticRoleLabeling-Swift), or [C#](https://github.com/starlangsoftware/SemanticRoleLabeling-CS) repository.
 
 ## Requirements
 
