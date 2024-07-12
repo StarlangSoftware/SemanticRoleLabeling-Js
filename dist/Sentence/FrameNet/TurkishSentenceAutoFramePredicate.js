@@ -21,6 +21,11 @@
             super();
             this.frameNet = frameNet;
         }
+        /**
+         * Checks all possible frame predicates and annotate them.
+         * @param sentence The sentence for which frame predicates will be determined automatically.
+         * @return True, if at least one frame predicate is annotated, false otherwise.
+         */
         autoPredicate(sentence) {
             let candidateList = sentence.predicateFrameCandidates(this.frameNet);
             for (let word of candidateList) {
