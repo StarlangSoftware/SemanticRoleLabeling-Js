@@ -25,7 +25,7 @@ export class TurkishSentenceAutoPredicate extends SentenceAutoPredicate{
     autoPredicate(sentence: AnnotatedSentence): boolean {
         let candidateList = sentence.predicateCandidates(this.framesetList);
         for (let word of candidateList){
-            word.setArgument("PREDICATE$" + word.getSemantic());
+            word.setArgumentList("PREDICATE$" + word.getSemantic());
         }
         if (candidateList.length > 0){
             return true;

@@ -26,27 +26,27 @@
             let predicateId = null;
             for (let i = 0; i < sentence.wordCount(); i++) {
                 let word = sentence.getWord(i);
-                if (word.getArgument() != null && word.getArgument().getArgumentType() == "PREDICATE") {
-                    predicateId = word.getArgument().getId();
+                if (word.getArgumentList() != null && word.getArgumentList().containsPredicate()) {
+                    predicateId = word.getSemantic();
                     break;
                 }
             }
             if (predicateId != null) {
                 for (let i = 0; i < sentence.wordCount(); i++) {
                     let word = sentence.getWord(i);
-                    if (word.getArgument() == null) {
+                    if (word.getArgumentList() == null) {
                         if (word.getShallowParse() != null && word.getShallowParse() == "ÖZNE") {
                             if (word.getParse() != null && word.getParse().containsTag(MorphologicalTag_1.MorphologicalTag.PASSIVE)) {
-                                word.setArgument("ARG1$" + predicateId);
+                                word.setArgumentList("ARG1$" + predicateId);
                             }
                             else {
-                                word.setArgument("ARG0$" + predicateId);
+                                word.setArgumentList("ARG0$" + predicateId);
                             }
                             modified = true;
                         }
                         else {
                             if (word.getShallowParse() != null && word.getShallowParse() == "NESNE") {
-                                word.setArgument("ARG1$" + predicateId);
+                                word.setArgumentList("ARG1$" + predicateId);
                                 modified = true;
                             }
                         }

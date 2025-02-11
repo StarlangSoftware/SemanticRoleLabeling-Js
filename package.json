@@ -1,6 +1,6 @@
 {
   "name": "nlptoolkit-semanticrolelabeling",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "types": "index.js",
@@ -24,16 +24,16 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "nlptoolkit-annotatedsentence": "^1.0.4",
+    "nlptoolkit-annotatedsentence": "^1.0.5",
     "nlptoolkit-annotatedtree": "^1.0.3",
     "nlptoolkit-corpus": "^1.0.9",
     "nlptoolkit-dependencyparser": "^1.0.3",
     "nlptoolkit-dictionary": "^1.0.9",
-    "nlptoolkit-framenet": "^1.0.1",
+    "nlptoolkit-framenet": "^1.0.2",
     "nlptoolkit-morphologicalanalysis": "^1.0.9",
     "nlptoolkit-namedentityrecognition": "^1.0.1",
     "nlptoolkit-parsetree": "^1.0.2",
-    "nlptoolkit-propbank": "^1.0.3",
+    "nlptoolkit-propbank": "^1.0.4",
     "nlptoolkit-sentinet": "^1.0.1",
     "nlptoolkit-wordnet": "^1.0.5"
   }

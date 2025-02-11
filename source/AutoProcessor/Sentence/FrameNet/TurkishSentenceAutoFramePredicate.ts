@@ -22,7 +22,7 @@ export class TurkishSentenceAutoFramePredicate extends SentenceAutoFramePredicat
     autoPredicate(sentence: AnnotatedSentence): boolean {
         let candidateList = sentence.predicateFrameCandidates(this.frameNet);
         for (let word of candidateList){
-            word.setFrameElement("PREDICATE$NONE$" + word.getSemantic());
+            word.setFrameElementList("PREDICATE$NONE$" + word.getSemantic());
         }
         if (candidateList.length > 0){
             return true;
